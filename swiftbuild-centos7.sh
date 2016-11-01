@@ -74,6 +74,12 @@ case "$1" in
     wget https://dl.fedoraproject.org/pub/fedora/linux/releases/24/Everything/x86_64/os/Packages/l/libtool-2.4.6-11.fc24.x86_64.rpm
     wget https://copr-be.cloud.fedoraproject.org/results/lebauce/Darling/fedora-22-x86_64/libkqueue-2.0.1-1/libkqueue-2.0.1-1.x86_64.rpm
     wget https://copr-be.cloud.fedoraproject.org/results/lebauce/Darling/fedora-22-x86_64/libkqueue-2.0.1-1/libkqueue-devel-2.0.1-1.x86_64.rpm
+	wget https://dl.fedoraproject.org/pub/fedora/linux/releases/24/Everything/x86_64/os/Packages/l/libcurl-7.47.1-4.fc24.x86_64.rpm
+	wget https://dl.fedoraproject.org/pub/fedora/linux/releases/24/Everything/x86_64/os/Packages/l/libcurl-devel-7.47.1-4.fc24.x86_64.rpm
+
+https://dl.fedoraproject.org/pub/fedora/linux/releases/24/Everything/x86_64/os/Packages/l/libpsl-0.13.0-1.fc24.x86_64.rpm
+https://dl.fedoraproject.org/pub/fedora/linux/releases/24/Everything/x86_64/os/Packages/l/libssh2-1.7.0-5.fc24.x86_64.rpm
+https://dl.fedoraproject.org/pub/fedora/linux/releases/24/Everything/x86_64/os/Packages/l/libunistring-0.9.4-3.fc24.x86_64.rpm
 
     #install binutils
     sudo yum install -y binutils-2.26-18.fc24.x86_64.rpm
@@ -127,7 +133,8 @@ case "$1" in
     python-devel \
     pkgconfig \
     autoconf \
-    automake
+    automake \
+	libcurl-devel
 
     #substitute cmake3 for cmake
     sudo mv /usr/bin/cmake /usr/bin/cmake2
